@@ -3,11 +3,186 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Google AI Studio App</title>
+    <title>Lumina Dental Care | Modern Dentistry</title>
+    <link rel="stylesheet" href="/src/index.css" />
   </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
+  <body class="bg-white font-sans text-stone-900 selection:bg-emerald-100 selection:text-emerald-900 scroll-smooth">
+    
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-stone-100">
+      <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+        <div class="flex items-center gap-2">
+          <div class="w-10 h-10 bg-emerald-600 rounded-xl flex items-center justify-center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-white w-6 h-6"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/><path d="M5 3v4"/><path d="M19 17v4"/><path d="M3 5h4"/><path d="M17 19h4"/></svg>
+          </div>
+          <span class="text-xl font-serif font-semibold tracking-tight text-stone-900">Lumina Dental</span>
+        </div>
+
+        <div class="hidden md:flex items-center gap-8">
+          <a href="#services" class="text-sm font-medium text-stone-600 hover:text-emerald-600 transition-colors">Services</a>
+          <a href="#about" class="text-sm font-medium text-stone-600 hover:text-emerald-600 transition-colors">About</a>
+          <a href="#testimonials" class="text-sm font-medium text-stone-600 hover:text-emerald-600 transition-colors">Testimonials</a>
+          <button class="bg-emerald-600 text-white px-6 py-2.5 rounded-full text-sm font-medium hover:bg-emerald-700 transition-all shadow-md shadow-emerald-100">
+            Book Appointment
+          </button>
+        </div>
+
+        <button class="md:hidden text-stone-900">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+        </button>
+      </div>
+    </nav>
+
+    <main>
+      <!-- Hero Section -->
+      <section class="pt-32 pb-20 px-6 bg-[#F9F8F6]">
+        <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
+          <div class="animate-fade-in-up">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-50 text-emerald-700 text-xs font-bold uppercase tracking-wider mb-6">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></svg>
+              Certified Professional Care
+            </div>
+            <h1 class="text-5xl md:text-7xl font-serif font-light leading-[1.1] text-stone-900 mb-8">
+              Your smile is the <br />
+              <span class="italic text-emerald-600">gateway</span> to health.
+            </h1>
+            <p class="text-lg text-stone-600 mb-10 max-w-md leading-relaxed">
+              Experience premium dental care in a serene environment. We combine advanced technology with a gentle touch to give you the smile you deserve.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4">
+              <button class="bg-stone-900 text-white px-8 py-4 rounded-full text-lg font-medium hover:bg-stone-800 transition-all">
+                Contact Us
+              </button>
+              <button class="flex items-center justify-center gap-2 px-8 py-4 rounded-full text-lg font-medium text-stone-900 border border-stone-200 hover:bg-white transition-all">
+                View Services 
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5"><path d="m9 18 6-6-6-6"/></svg>
+              </button>
+            </div>
+            
+            <div class="mt-12 flex items-center gap-6">
+              <div class="flex -space-x-3">
+                <img src="https://picsum.photos/seed/p1/100/100" class="w-10 h-10 rounded-full border-2 border-white object-cover" alt="Patient" referrerPolicy="no-referrer">
+                <img src="https://picsum.photos/seed/p2/100/100" class="w-10 h-10 rounded-full border-2 border-white object-cover" alt="Patient" referrerPolicy="no-referrer">
+                <img src="https://picsum.photos/seed/p3/100/100" class="w-10 h-10 rounded-full border-2 border-white object-cover" alt="Patient" referrerPolicy="no-referrer">
+                <img src="https://picsum.photos/seed/p4/100/100" class="w-10 h-10 rounded-full border-2 border-white object-cover" alt="Patient" referrerPolicy="no-referrer">
+              </div>
+              <div>
+                <div class="flex items-center gap-1 text-amber-400">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                </div>
+                <p class="text-sm text-stone-500 font-medium">Trusted by 2,000+ happy patients</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="relative animate-fade-in">
+            <div class="aspect-[4/5] rounded-[2rem] overflow-hidden shadow-2xl">
+              <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&q=80&w=1000" class="w-full h-full object-cover" alt="Modern Dental Clinic" referrerPolicy="no-referrer">
+            </div>
+            <div class="absolute -bottom-6 -left-6 bg-white p-6 rounded-2xl shadow-xl max-w-[200px] hidden sm:block">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-emerald-600 w-8 h-8 mb-3"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+              <p class="text-sm font-medium text-stone-900">Personalized treatment plans for every patient.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Services Section -->
+      <section id="services" class="py-24 px-6 bg-white">
+        <div class="max-w-7xl mx-auto">
+          <div class="text-center max-w-2xl mx-auto mb-16">
+            <h2 class="text-sm font-bold text-emerald-600 uppercase tracking-widest mb-4">Our Expertise</h2>
+            <h3 class="text-4xl font-serif text-stone-900 mb-6">Comprehensive care for a lifetime of healthy smiles.</h3>
+          </div>
+          
+          <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div class="p-8 rounded-3xl bg-stone-50 border border-stone-100 hover:bg-white hover:shadow-xl transition-all group">
+              <div class="w-12 h-12 bg-emerald-100 text-emerald-700 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-emerald-600 group-hover:text-white transition-colors">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></svg>
+              </div>
+              <h4 class="text-xl font-semibold text-stone-900 mb-4">General Dentistry</h4>
+              <p class="text-stone-600 text-sm leading-relaxed">Comprehensive exams, cleanings, and preventive care for all ages.</p>
+            </div>
+            <div class="p-8 rounded-3xl bg-stone-50 border border-stone-100 hover:bg-white hover:shadow-xl transition-all group">
+              <div class="w-12 h-12 bg-emerald-100 text-emerald-700 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-emerald-600 group-hover:text-white transition-colors">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/><path d="M5 3v4"/><path d="M19 17v4"/><path d="M3 5h4"/><path d="M17 19h4"/></svg>
+              </div>
+              <h4 class="text-xl font-semibold text-stone-900 mb-4">Cosmetic Dentistry</h4>
+              <p class="text-stone-600 text-sm leading-relaxed">Teeth whitening, veneers, and smile makeovers to boost your confidence.</p>
+            </div>
+            <div class="p-8 rounded-3xl bg-stone-50 border border-stone-100 hover:bg-white hover:shadow-xl transition-all group">
+              <div class="w-12 h-12 bg-emerald-100 text-emerald-700 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-emerald-600 group-hover:text-white transition-colors">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+              </div>
+              <h4 class="text-xl font-semibold text-stone-900 mb-4">Orthodontics</h4>
+              <p class="text-stone-600 text-sm leading-relaxed">Modern solutions like Invisalign and traditional braces for perfect alignment.</p>
+            </div>
+            <div class="p-8 rounded-3xl bg-stone-50 border border-stone-100 hover:bg-white hover:shadow-xl transition-all group">
+              <div class="w-12 h-12 bg-emerald-100 text-emerald-700 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-emerald-600 group-hover:text-white transition-colors">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+              </div>
+              <h4 class="text-xl font-semibold text-stone-900 mb-4">Dental Implants</h4>
+              <p class="text-stone-600 text-sm leading-relaxed">Permanent, natural-looking solutions for missing teeth.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA Section -->
+      <section class="py-24 px-6">
+        <div class="max-w-5xl mx-auto bg-emerald-600 rounded-[3rem] p-12 md:p-20 text-center text-white relative overflow-hidden">
+          <div class="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full -translate-y-1/2 translate-x-1/2 blur-3xl"></div>
+          <h2 class="text-4xl md:text-5xl font-serif mb-8 relative z-10">Ready to transform your smile?</h2>
+          <p class="text-emerald-50 text-lg mb-12 max-w-xl mx-auto relative z-10">
+            Join our community of happy patients and experience the future of dental care today.
+          </p>
+          <button class="bg-white text-emerald-700 px-10 py-4 rounded-full text-lg font-bold hover:bg-emerald-50 transition-all shadow-xl shadow-emerald-900/20 relative z-10">
+            Contact Us Now
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-stone-50 pt-20 pb-10 px-6 border-t border-stone-200">
+      <div class="max-w-7xl mx-auto">
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+          <div>
+            <div class="flex items-center gap-2 mb-6">
+              <div class="w-8 h-8 bg-emerald-600 rounded-lg flex items-center justify-center text-white font-bold">L</div>
+              <span class="text-lg font-serif font-semibold text-stone-900">Lumina Dental</span>
+            </div>
+            <p class="text-stone-500 text-sm leading-relaxed">
+              Providing world-class dental care with a focus on patient comfort and aesthetic excellence.
+            </p>
+          </div>
+          <div>
+            <h5 class="font-semibold text-stone-900 mb-6 uppercase text-xs tracking-widest">Contact</h5>
+            <p class="text-sm text-stone-600 mb-2">123 Aesthetic Way, Suite 100</p>
+            <p class="text-sm text-stone-600">Beverly Hills, CA 90210</p>
+            <p class="text-sm text-stone-600 mt-4">(555) 123-4567</p>
+          </div>
+          <div>
+            <h5 class="font-semibold text-stone-900 mb-6 uppercase text-xs tracking-widest">Hours</h5>
+            <p class="text-sm text-stone-600 mb-2 flex justify-between"><span>Mon - Fri</span> <span>8am - 6pm</span></p>
+            <p class="text-sm text-stone-600 flex justify-between"><span>Sat</span> <span>9am - 2pm</span></p>
+          </div>
+          <div>
+            <h5 class="font-semibold text-stone-900 mb-6 uppercase text-xs tracking-widest">Newsletter</h5>
+            <div class="flex gap-2">
+              <input type="text" placeholder="Email" class="bg-white border border-stone-200 rounded-lg px-4 py-2 text-sm w-full">
+              <button class="bg-stone-900 text-white px-4 py-2 rounded-lg">→</button>
+            </div>
+          </div>
+        </div>
+        <div class="pt-8 border-t border-stone-200 text-center">
+          <p class="text-xs text-stone-400">© 2026 Lumina Dental Care. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
 
